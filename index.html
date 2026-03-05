@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>SITNAGPUR - Official Chat Assistant</title>
+
+<link rel="stylesheet" href="style.css">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+
+<body style="background:#f4f7fb; margin:0;">
+
+<div class="container" style="padding:10px;">
+
+<main class="main-content">
+
+<!-- LEFT SIDEBAR -->
+
+<aside class="chat-history-sidebar"
+style="background:#ffffff; padding:18px; border-right:1px solid #e6e9ef;">
+
+<div class="sidebar-header" style="margin-bottom:18px;">
+<h3 style="color:#1e3a8a;">
+<i class="fas fa-clock-rotate-left"></i> Recent Chats
+</h3>
+
+<button class="new-chat-btn"
+style="background:#2563eb;color:white;padding:6px 12px;border:none;border-radius:6px;">
+<i class="fas fa-plus"></i> New
+</button>
+
+</div>
+
+
+<div class="search-chats" style="margin-bottom:20px;">
+<i class="fas fa-magnifying-glass" style="color:#6b7280;"></i>
+<input type="text"
+placeholder="Search conversations..."
+style="margin-left:8px;padding:6px;border:1px solid #ddd;border-radius:6px;">
+</div>
+
+
+<div class="chat-list">
+
+<div class="chat-list-item active" style="margin-bottom:12px;">
+
+<div class="chat-avatar">
+<i class="fas fa-robot" style="color:#2563eb;"></i>
+</div>
+
+<div class="chat-details">
+<h4>SITNAGPUR Assistant</h4>
+<p style="color:#6b7280;">How can I help you today?</p>
+<span class="chat-time">Just now</span>
+</div>
+
+<span class="unread-badge"
+style="background:#ef4444;color:white;padding:2px 6px;border-radius:6px;">
+2
+</span>
+
+</div>
+
+
+<div class="chat-list-item" style="margin-bottom:12px;">
+
+<div class="chat-avatar">
+<i class="fas fa-user-graduate" style="color:#059669;"></i>
+</div>
+
+<div class="chat-details">
+<h4>Admissions Query</h4>
+<p style="color:#6b7280;">Application deadline 2026...</p>
+<span class="chat-time">2 hours ago</span>
+</div>
+
+</div>
+
+
+<div class="chat-list-item" style="margin-bottom:12px;">
+
+<div class="chat-avatar">
+<i class="fas fa-book-open" style="color:#9333ea;"></i>
+</div>
+
+<div class="chat-details">
+<h4>Course Information</h4>
+<p style="color:#6b7280;">B.Tech Computer Science...</p>
+<span class="chat-time">Yesterday</span>
+</div>
+
+</div>
+
+
+<div class="chat-list-item">
+
+<div class="chat-avatar">
+<i class="fas fa-money-bill-wave" style="color:#ea580c;"></i>
+</div>
+
+<div class="chat-details">
+<h4>Fee Structure</h4>
+<p style="color:#6b7280;">Scholarship opportunities...</p>
+<span class="chat-time">3 days ago</span>
+</div>
+
+</div>
+
+</div>
+
+
+<div class="quick-links" style="margin-top:30px;">
+
+<h4 style="color:#1e293b;">Quick Links</h4>
+
+<ul style="margin-top:10px;line-height:2;">
+
+<li>
+<a href="#" style="color:#2563eb;text-decoration:none;">
+<i class="fas fa-file-pdf"></i> Prospectus 2026
+</a>
+</li>
+
+<li>
+<a href="#" style="color:#2563eb;text-decoration:none;">
+<i class="fas fa-calendar-days"></i> Academic Calendar
+</a>
+</li>
+
+<li>
+<a href="#" style="color:#2563eb;text-decoration:none;">
+<i class="fas fa-award"></i> Achievements
+</a>
+</li>
+
+</ul>
+
+</div>
+
+</aside>
+
+
+<!-- MAIN CHAT AREA -->
+
+<section class="chat-main-area">
+
+<div class="chat-container">
+
+<div class="chat-header"
+style="background:#2563eb;color:white;padding:16px;">
+
+<div class="chat-header-info">
+
+<div class="bot-status-indicator">
+<i class="fas fa-circle" style="color:#22c55e;"></i>
+<span>SITNAGPUR Assistant</span>
+</div>
+
+<p class="bot-subtitle"
+style="margin-top:4px;color:#e0e7ff;">
+Official Institute Chatbot • Online 24/7
+</p>
+
+</div>
+
+</div>
+
+
+<div class="messages-area" id="messagesArea" style="padding:20px;">
+
+
+<div class="message-date-divider"
+style="margin-bottom:20px;color:#64748b;">
+<span>Today</span>
+</div>
+
+
+<div class="message bot">
+
+<div class="message-avatar">
+<i class="fas fa-robot" style="color:#2563eb;"></i>
+</div>
+
+
+<div class="message-content-wrapper">
+
+<div class="message-sender">SITNAGPUR Assistant</div>
+
+
+<div class="message-bubble"
+style="background:#f1f5f9;padding:14px;border-radius:10px;">
+
+<p>👋 Welcome to SITNAGPUR Official Chat Assistant!</p>
+
+<p>I'm here to help you with:</p>
+
+<ul class="feature-list">
+
+<li><i class="fas fa-check-circle" style="color:#22c55e;"></i> Admission inquiries</li>
+
+<li><i class="fas fa-check-circle" style="color:#22c55e;"></i> Course information</li>
+
+<li><i class="fas fa-check-circle" style="color:#22c55e;"></i> Fee structure & scholarships</li>
+
+<li><i class="fas fa-check-circle" style="color:#22c55e;"></i> Exam schedules</li>
+
+<li><i class="fas fa-check-circle" style="color:#22c55e;"></i> Campus facilities</li>
+
+<li><i class="fas fa-check-circle" style="color:#22c55e;"></i> Placement statistics</li>
+
+</ul>
+
+<p>How may I assist you today?</p>
+
+</div>
+
+<span class="message-time">10:00 AM</span>
+
+</div>
+
+</div>
+
+
+<div class="quick-actions-container"
+style="margin-top:30px;">
+
+<p style="color:#334155;">Quick Actions:</p>
+
+<div class="quick-action-buttons"
+style="margin-top:10px;">
+
+<button class="quick-action-btn"
+style="background:#2563eb;color:white;margin:5px;padding:8px 12px;border:none;border-radius:6px;"
+data-query="admissions">
+
+<i class="fas fa-graduation-cap"></i> Admissions 2026
+
+</button>
+
+
+<button class="quick-action-btn"
+style="background:#059669;color:white;margin:5px;padding:8px 12px;border:none;border-radius:6px;"
+data-query="courses">
+
+<i class="fas fa-book-open"></i> Courses
+
+</button>
+
+
+<button class="quick-action-btn"
+style="background:#ea580c;color:white;margin:5px;padding:8px 12px;border:none;border-radius:6px;"
+data-query="fees">
+
+<i class="fas fa-money-bill-wave"></i> Fee Structure
+
+</button>
+
+
+<button class="quick-action-btn"
+style="background:#7c3aed;color:white;margin:5px;padding:8px 12px;border:none;border-radius:6px;"
+data-query="exams">
+
+<i class="fas fa-calendar-days"></i> Exam Schedule
+
+</button>
+
+
+<button class="quick-action-btn"
+style="background:#2563eb;color:white;margin:5px;padding:8px 12px;border:none;border-radius:6px;"
+data-query="placement">
+
+<i class="fas fa-briefcase"></i> Placements
+
+</button>
+
+
+<button class="quick-action-btn"
+style="background:#059669;color:white;margin:5px;padding:8px 12px;border:none;border-radius:6px;"
+data-query="contact">
+
+<i class="fas fa-phone"></i> Contact
+
+</button>
+
+</div>
+
+</div>
+
+</div>
+
+
+<div class="typing-indicator" id="typingIndicator">
+<span></span>
+<span></span>
+<span></span>
+</div>
+
+
+<div class="input-area"
+style="padding:14px;border-top:1px solid #e5e7eb;">
+
+<input type="text"
+id="userInput"
+placeholder="Type your message here..."
+autocomplete="off"
+style="padding:8px;border:1px solid #ddd;border-radius:6px;">
+
+<button class="send-btn"
+id="sendButton"
+style="background:#2563eb;color:white;border:none;padding:8px 12px;border-radius:6px;">
+
+<i class="fas fa-paper-plane"></i>
+
+</button>
+
+</div>
+
+</div>
+
+</section>
+
+</main>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
